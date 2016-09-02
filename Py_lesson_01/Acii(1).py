@@ -1,0 +1,10 @@
+print(" \'--#\'        \'#--\'")
+print("/ \___\      /___/ \\" )
+print("|_|_A_|      |_A_|_|")
+print ("")
+print ("No distance is too great...")
+print ("   .'', ,''.  ")
+print ("   ;   '   ;  ")
+print ("    '.   .'   ")
+print ("      '.'      Between friends.  ")
+
