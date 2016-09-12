@@ -1,5 +1,7 @@
-A = input ("Please enter your height.")
-B = input ("Please enter your weight.")
+A = int(input ("Please enter your height."))
+B = int(input ("Please enter your weight."))
 
-print (703*B//A*A, "is your BMI")
+calc = ((703*B)/(A*A))
+
+print (calc, "is your BMI")
 
