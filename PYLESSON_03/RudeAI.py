@@ -37,7 +37,7 @@ E = input (" That you know of.")
 print (".....Oh." ,E,". I see. I shall make no jokes about your mother. Noope. Not even tempted.")
 
 
-print()
+print("This new Stuff works awesome!!!")
 
 print ("What do you want to be when you grow up?")
 
