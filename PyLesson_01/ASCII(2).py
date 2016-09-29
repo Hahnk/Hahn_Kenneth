@@ -7,3 +7,8 @@ print('        \'~~~~~~~~~~~~~~~~~0oo~~~~\'')
 print('                  |__|__|           ')
 print('                   || ||            ')
 print('                  oo0 0oo           ')
+
+
+
+
+print (' A B \t C \n D E')
