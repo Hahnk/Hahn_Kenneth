@@ -18,7 +18,7 @@ total = (tax + disubt)
 
 print ("<<<<<<<<<<< Receipt >>>>>>>>>>>>>>")
 def frmat ( i, p ):
-        print (" {:.2}".format ,(i,p))
+        print (" {:<10}.......{:.2}".format(i,p))
 
 frmat (i1, p1)
 frmat (i2, p2)

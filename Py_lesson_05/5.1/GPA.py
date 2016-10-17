@@ -19,4 +19,4 @@ def calcp(grd):
     else:
         print( "Please Capitalize all your grades")
     
-print("your GPA is: ", float(calcp(g1)+calcp(g2)+calcp(g3)+calcp(g4)+calcp(g5)+calcp(g6))/6)
+print("your GPA is: ", (calcp(g1)+calcp(g2)+calcp(g3)+calcp(g4)+calcp(g5)+calcp(g6))/6)
