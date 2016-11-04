@@ -1,3 +1,7 @@
-st = ("Please input word")
+st = input ("Please input word")
 
-for i in range (len(st)
+def printri():
+    for i in range (len(st), 0 ,-1):
+        print(st[0:i])
+printri()
+              
