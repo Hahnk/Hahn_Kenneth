@@ -47,18 +47,17 @@ print(output)
 
 
 print ("----------------------------------------------------------")
-
-
-#You can use split() to add values to your array,
-#while eliminating unwanted characters using a delimiter.
-#Whatever you enter into the parentheses of split(),  (SEE***)
-#it will omit this character from it's output entirely.
+#Puts everything into a list
 mylist = []
 word = "P r o f e s s o r"
 mylist = word.split(" ")
 print(mylist)
 
 print ("------------------------------")
+#You can use split() to add values to your array,
+#while eliminating unwanted characters using a delimiter.
+#Whatever you enter into the parentheses of split(),  (SEE***)
+#it will omit this character from it's output entirely.
 word = "P r o f e s s o r"
 myList = word.split(" ") # in here
 output = ""
@@ -66,6 +65,21 @@ for i in myList:
     output += (i)
 
 print(output)
+
+print("--------------------------------------")
+# POP()Removes values from a list by index number 
+nums = [1,2,3,4,5]
+print ("Before:" ,nums)
+nums.pop(3)
+print("After pop: ", nums)
+# but it removes #4
+
+print("------------------------------------------")
+# Finds specific value and removes it
+nums = [1, 2, 3, 4, 5]
+print("Before: ", nums)
+nums.remove(3)
+print("After remove: ", nums)
 
 
 
