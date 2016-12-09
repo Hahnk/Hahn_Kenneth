@@ -8,4 +8,4 @@ for i in range (0,sz):
     else:
         sq.append(sq[i-1] + sq[i-2])
     
-print(sq[i] + " " )
+print(sq)
