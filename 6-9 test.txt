@@ -1,0 +1,24 @@
+Q1: 
+
+i = 0
+while myList[i] >= 0:
+   i += 1
+location = i
+ 
+Will only work if there is a negative number,
+ because even if it is zero,
+ it still gets one added to it as it moves up the list,
+so it will never exit unless there is a negative number 
+
+Q2: 
+A list containing N values has a top index of n-1
+
+Q3:
+count = 0
+for i in range(0, N):
+   if list1[i] != 0:  # If it does not equal zero
+       list1[count] = list1[i]
+       count += 1 # increase count by one
+list2 = []
+for i in range(0, count):  # So, the range will only be as much AS many nonzero numbers there are
+   list2.append(list1[i])
