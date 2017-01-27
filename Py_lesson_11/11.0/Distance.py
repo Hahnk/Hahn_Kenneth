@@ -15,7 +15,7 @@ class Distance:
         self.distance = 0
 
     def getmph(self):
-        self.distance = math.sqrt(int(self.xo-self.xt)*int(self.xt-self.xo)+int(self.yt-self.yo)*int(self.yt-self.yo))
+        self.distance = math.sqrt(int(self.xt-self.xo)*int(self.xt-self.xo)+int(self.yt-self.yo)*int(self.yt-self.yo))
         return self.distance
         
 def main():
