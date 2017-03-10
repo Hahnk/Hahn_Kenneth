@@ -1,0 +1,30 @@
+p:nth-child(even){
+    color: green;
+}
+
+p:nth-child(odd){
+    color: red;
+
+}
+p:not(.Classy){
+    color:blue;
+}
+
+tr:nth-child(odd) > td:nth-child(even){
+    background-color:green;
+}
+tr:nth-child(odd) > td:nth-child(odd){
+    background-color:red;
+}
+
+tr:nth-child(even) > td:nth-child(odd){
+    background-color:green;
+}
+tr:nth-child(even) > td:nth-child(even){
+    background-color:red;
+}
+
+
+* {
+    color: yellow;
+}
