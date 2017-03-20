@@ -22,8 +22,8 @@ tr:nth-child(even) > td:nth-child(odd){
 }
 tr:nth-child(even) > td:nth-child(even){
     background-color:red;
-}
 
+}
 
 * {
     color: yellow;
