@@ -1,0 +1,88 @@
+ul{
+    background-color:green;
+}
+
+header{
+    color: red;
+}
+
+p:nth-child(odd){
+    background-color:green;
+}
+
+p:nth-child(even){
+    background-color:red;
+}
+
+
+p{
+    color:orange;
+}
+
+p:nth-child(even){
+    color: green;
+}
+
+p:nth-child(odd) {
+    color: red;
+}
+
+p:last-child{
+    background-color:blue;
+}
+div{
+    background-color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font: bold 28px arial;
+}
+
+h2 {
+    font: bold 14px Tahoma;
+}
+
+
+header , section, footer, aside, nav, article{
+    display : block;
+}
+
+body {
+    text-align: center;
+}
+
+#mainsection {
+    float: left;
+    width: 900px;
+}
+
+#bigwrapper {
+    border: 5px solid green;
+    width:900px;
+    margin:20px auto; /*man, now I know how to comment!*/
+    text-align: center;
+}
+
+#sidenews{
+    display: block;
+    float: left;
+    width: 200px;
+    padding: 30px;
+    background: lightpink;
+}
+
+article{
+    border:1px dotted orange;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+article > footer {
+    text-align: right;
+}
