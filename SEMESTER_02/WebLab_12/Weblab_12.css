@@ -2,17 +2,91 @@ body {
     text-align: center;
 }
 
-#box{
+#box1{
     display: block;
     width: 500px;
-    margin: 50px; auto;
+    margin: 50px;
     padding: 15px;
     text-align: center;
-    border: 3px solid purple;
-    background: yellow;
+    border: 5px solid purple;
+    background: -webkit-linear-gradient(60deg, black, yellow);
     -webkit-box-flex: 1;
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
 }
 
-#text {
+#text1 {
     font: bold 30px arial;
+    text-shadow: rgb(50,50,50) 1px 1px 3px;
 }
+
+#box2{
+    display: block;
+    width: 500px;
+    margin: 50px;
+    padding: 15px;
+    text-align: center;
+    border: 5px solid purple;
+    outline: 3px solid green;
+    background: -webkit-radial-gradient(center, ellipse, mediumpurple 0%, yellow 100%);
+    -webkit-box-flex: 1;
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+}
+
+
+
+#box3 {
+    display: block;
+    width: 500px;
+    margin: 50px;
+    padding: 15px;
+    text-align: center;
+    border: 5px solid purple;
+    background:yellow;
+    -webkit-box-flex: 1;
+    outline: 6px solid orange;
+    -webkit-transform: scale(1.2) rotate(5deg) skew(30deg) translate(50px, 10px);
+
+
+}
+
+#but {
+    display:block;
+    margin: 150px auto;
+    color:white;
+    background: -webkit-linear-gradient(right, red, green);
+    width: 80px;
+    height: 50px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow:rgb(110,110,110) 10px 8px 8px;
+    -webkit-transition: -webkit-transform .1s;
+}
+
+
+#but > p {
+    padding:15px;
+    text-shadow: black 1px 1px 3px;
+}
+
+#but:hover {
+    background: -webkit-linear-gradient(right, green, red);
+    -webkit-transform: translate(-20px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

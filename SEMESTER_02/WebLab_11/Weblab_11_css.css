@@ -33,6 +33,10 @@ body {
     background: yellow;
     border: 3px solid purple;
     padding: 20px;
+    -webkit-transition: -webkit-transform .1s;
+}
+#topheader:hover > h1 {
+    -webkit-transform: scale(1.2) translate(55px)
 }
 
 #topmenu {
@@ -86,14 +90,14 @@ body {
 
 #kid1 {
     border: 2px solid red;
-    background: green;
+    background: -webkit-linear-gradient(right, red, green);
     padding: 20px;
     margin: 10px;
     -webkit-box-ordinal-group:3;
 }
 #kid3 {
     border: 2px solid green;
-    background: red;
+    background: -webkit-radial-gradient(green, red);
     padding: 20px;
     margin: 10px;
     width: 40px;
@@ -102,8 +106,12 @@ body {
 }
 #kid2 {
     border: 2px solid red;
-    background: green;
+    background: -webkit-linear-gradient(left, red, green);
     padding: 20px;
     margin: 10px;
     -webkit-box-ordinal-group:1;
+}
+
+ul:hover {
+    -webkit-transform: scale(1.2,1.2);
 }
