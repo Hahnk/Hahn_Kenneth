@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        //comment for the rest of the line
+        /* everything in these is a comment &nbsp; */
+        function bmi() {
+            alert("BMI score is not relevant");
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("weight").value;
+            document.write("your BMI is&nbsp" + (w/h*h));
+        }
+    </script>
+<form>
+    Height: <input type = "text" id="height" value = "enter height" />
+    <br/>
+    Weight: <input type ="text" id ="weight" value ="enter weight" />
+    <br/>
+    <input type = "button" value = "Calculate" onclick = "bmi()">
+</form>
+</body>
+</html>
