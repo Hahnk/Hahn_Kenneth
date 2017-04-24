@@ -5,26 +5,32 @@ function validateUser() {
 
     if (atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > x.length)
         alert("Invalid Username");
-
-
     else
-        alert("WELCOME")
-
+        return true
+        alert("WELCOME");
 }
-validateUser();
 
 function valpass() {
     var y = document.forms.input.password.length;
+
     if(y > 5)
+        return true
         alert("!");
     else
         alert("Invalid Password");
 
 }
-valpass();
 
 function validate() {
-    validateUser();
-    valpass();
-    alert("user");
+    var x = document.forms.input.username.value;
+    var y = document.forms.input.password.length;
+    //if username and password are bad...
+        //alert "both are bad"
+    else if(valpass == true || validateUser == true) //if username or password is bad..
+    {
+        validateUser();
+        valpass();
+    }
+    else
+        alert("success")
 }
