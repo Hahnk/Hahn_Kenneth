@@ -14,27 +14,32 @@ function validateUser() {
 }
 
 function valpass() {
-    var y = document.forms.input.pass.length;
+    var y = document.forms.input.pass.value;
 
-    if(y > 5) {
-        return true;
-    }
-    else {
+    if(y.length < 5) {
         alert("Invalid Password");
         return false;
     }
-
+    else {
+        return true;
+    }
 }
 
-function validate() 
+function validate()
 {
     var x = document.forms.input.username.value;
-    var y = document.forms.input.pass.length;
-    if(valpass() == false || validateUser() == false) //if username or password is bad..
+    var y = document.forms.input.pass.value;
+    alert(x);
+    alert(y);
+    var passRight = new Boolean (valpass());
+    var userRight = new Boolean (validateUser());
+    if(passRight == false && userRight == false) //if username or password is bad..
     {
-        validateUser();
-        valpass();
+        alert("Fix both username and password.");
     }
-    else
-        alert("success")
+    else {
+        if(passRight == true && userRight == true)
+            alert("success");
+    }
 }
+
