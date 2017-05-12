@@ -1,11 +1,13 @@
 function drag(){
-    mantis = document.getElementById("rock");
+    rock = document.getElementById("rock");
     leftbox =document.getElementById("leftbox");
 
-    Rock.addEventListener("dragstart", startDrag, false);
+    rock.addEventListener("dragstart", startDrag, false);
+    rock.addEventListener("dragend", endDrag, false);
 
-    leftbox.addEventListener("dragenter", function(e){e.preventDefault()}, false);
-    leftbox.addEventListener("ddragover", function(e){e.preventDefault()}, false);
+    leftbox.addEventListener("dragenter", dragenter, false);
+    leftbox.addEventListener("dragleave", dragleave, false);
+    leftbox.addEventListener("dragover", function(e){e.preventDefault()}, false);
     leftbox.addEventListener("drop", drop, false);
 
 }
@@ -15,9 +17,27 @@ function startDrag(e) {
     e.dataTransfer.setData("Picture", pic);
 }
 
+function dragenter() {
+    e.preventDefault();
+    leftbox.style.background = "82343A";
+    leftbox.style.border = "3px solid green";
+}
+
+function dragleave(e) {
+    e.preventDefault();
+    leftbox.style.background = "white";
+    leftbox.style.border = "3px solid purple";
+    
+}
+
 function drop(e) {
     e.preventDefault();
     leftbox.innerHTML= e.dataTransfer.getData("Picture");
+}
+
+function endDrag(e) {
+    pic = e.target;
+    pic.style.visibility = "hidden";
 }
 
 window.addEventListener("load", drag, false);
