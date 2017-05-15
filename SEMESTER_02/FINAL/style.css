@@ -1,0 +1,110 @@
+/*
+ul{
+    background-color:green;
+}
+
+header{
+    color: red;
+}
+
+p:nth-child(odd){
+    background-color:green;
+}
+
+p:nth-child(even){
+    background-color:red;
+}
+
+
+p{
+    color:orange;
+}
+
+p:nth-child(even){
+    color: green;
+}
+
+p:nth-child(odd) {
+    color: red;
+}
+
+p:last-child{
+    background-color:blue;
+}
+div{
+    background-color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+*/
+
+
+h1 {
+    font: bold 28px arial;
+}
+
+h2 {
+    font: bold 14px Tahoma;
+}
+
+
+
+header , section, footer, aside, nav, article{
+    display : block;
+}
+
+body {
+    text-align: center;
+    background-image: url("http://bsnscb.com/data/out/5/39553438-amazon-forest-wallpapers.jpeg") ;
+    color: white;
+}
+
+#mainsection {
+    float: left;
+    width: 900px;
+}
+
+#bigwrapper {
+    border: 5px solid green;
+    width:900px;
+    margin:20px auto; /*man, now I know how to comment!*/
+    text-align: center;
+}
+
+#sidenews{
+    display: block;
+    float: left;
+    width: 200px;
+    padding: 30px;
+    background: lightpink;
+}
+
+article{
+    border:2px solid darkturquoise;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+article > footer {
+    text-align: right;
+}
+
+#topmenu {
+    background: darkmagenta;
+    color: yellow;
+}
+
+#topmenu li {
+    display: inline-block;
+    list-style:none;
+    padding: 5px;
+    font: bold 14px Tahoma;
+}
+
+ul > li:hover{
+    -webkit-transform: scale(1.2,1.2);
+}
+
+/**Set up hyoerlings for othwer pages
