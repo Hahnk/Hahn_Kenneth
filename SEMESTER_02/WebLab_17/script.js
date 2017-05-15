@@ -17,9 +17,9 @@ function startDrag(e) {
     e.dataTransfer.setData("Picture", pic);
 }
 
-function dragenter() {
+function dragenter(e) {
     e.preventDefault();
-    leftbox.style.background = "82343A";
+    leftbox.style.background = "pink";
     leftbox.style.border = "3px solid green";
 }
 
@@ -32,7 +32,7 @@ function dragleave(e) {
 
 function drop(e) {
     e.preventDefault();
-    leftbox.innerHTML= e.dataTransfer.getData("Picture");
+    leftbox.innerHTML = e.dataTransfer.getData("Picture");
 }
 
 function endDrag(e) {
